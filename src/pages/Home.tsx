@@ -1,67 +1,43 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { 
-  Shield, 
-  Cloud, 
-  Settings, 
-  CheckCircle,
-  ArrowRight,
-  Users,
-  DollarSign,
-  Quote
-} from 'lucide-react';
+import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import heroOffice from '@/assets/hero-office.jpg';
-
 const Home = () => {
-  const mainServices = [
-    {
-      icon: Settings,
-      title: 'Servicios TI Gestionados',
-      description: 'Gestión completa de tu infraestructura tecnológica con monitoreo 24/7, mantenimiento preventivo y soporte técnico especializado para garantizar el máximo rendimiento de tus sistemas.'
-    },
-    {
-      icon: Shield,
-      title: 'Soluciones de Ciberseguridad',
-      description: 'Protección integral contra amenazas cibernéticas con firewalls avanzados, detección de intrusiones y políticas de seguridad adaptadas a tu negocio para mantener tus datos seguros.'
-    },
-    {
-      icon: Cloud,
-      title: 'Servicios Cloud',
-      description: 'Migración y gestión de infraestructura en la nube con soluciones escalables que se adaptan al crecimiento de tu empresa, optimizando costos y mejorando la eficiencia operativa.'
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      icon: Users,
-      title: 'Soporte Proactivo',
-      description: 'Nuestro equipo de expertos monitorea continuamente tus sistemas para prevenir problemas antes de que afecten tu negocio, garantizando máxima disponibilidad y rendimiento.'
-    },
-    {
-      icon: Settings,
-      title: 'Soluciones a Medida',
-      description: 'Diseñamos e implementamos soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades específicas y objetivos de crecimiento de tu empresa.'
-    },
-    {
-      icon: DollarSign,
-      title: 'Precios Transparentes',
-      description: 'Sin costos ocultos ni sorpresas. Ofrecemos presupuestos claros y detallados con planes flexibles que se ajustan a tu presupuesto y necesidades reales.'
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const mainServices = [{
+    icon: Settings,
+    title: 'Servicios TI Gestionados',
+    description: 'Gestión completa de tu infraestructura tecnológica con monitoreo 24/7, mantenimiento preventivo y soporte técnico especializado para garantizar el máximo rendimiento de tus sistemas.'
+  }, {
+    icon: Shield,
+    title: 'Soluciones de Ciberseguridad',
+    description: 'Protección integral contra amenazas cibernéticas con firewalls avanzados, detección de intrusiones y políticas de seguridad adaptadas a tu negocio para mantener tus datos seguros.'
+  }, {
+    icon: Cloud,
+    title: 'Servicios Cloud',
+    description: 'Migración y gestión de infraestructura en la nube con soluciones escalables que se adaptan al crecimiento de tu empresa, optimizando costos y mejorando la eficiencia operativa.'
+  }];
+  const whyChooseUs = [{
+    icon: Users,
+    title: 'Soporte Proactivo',
+    description: 'Nuestro equipo de expertos monitorea continuamente tus sistemas para prevenir problemas antes de que afecten tu negocio, garantizando máxima disponibilidad y rendimiento.'
+  }, {
+    icon: Settings,
+    title: 'Soluciones a Medida',
+    description: 'Diseñamos e implementamos soluciones tecnológicas personalizadas que se adaptan perfectamente a las necesidades específicas y objetivos de crecimiento de tu empresa.'
+  }, {
+    icon: DollarSign,
+    title: 'Precios Transparentes',
+    description: 'Sin costos ocultos ni sorpresas. Ofrecemos presupuestos claros y detallados con planes flexibles que se ajustan a tu presupuesto y necesidades reales.'
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative bg-gradient-to-br from-primary to-cytek-blue-dark text-white py-20 lg:py-32 overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.85)), url(${heroOffice})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-cytek-blue-dark/90"></div>
+      <section className="relative bg-gradient-to-br from-primary to-cytek-blue-dark text-white py-20 lg:py-32 overflow-hidden" style={{
+      backgroundImage: `linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.85)), url(${heroOffice})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
+        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -94,8 +70,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {mainServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg h-full animate-fade-in hover-scale">
+            {mainServices.map((service, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg h-full animate-fade-in hover-scale">
                 <CardHeader className="text-center">
                   <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
                     <service.icon className="h-10 w-10 text-primary" />
@@ -107,8 +82,7 @@ const Home = () => {
                     {service.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -126,8 +100,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {whyChooseUs.map((reason, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 animate-fade-in hover-scale">
+            {whyChooseUs.map((reason, index) => <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 animate-fade-in hover-scale">
                 <CardHeader>
                   <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
                     <reason.icon className="h-10 w-10 text-primary" />
@@ -139,8 +112,7 @@ const Home = () => {
                     {reason.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -195,8 +167,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
