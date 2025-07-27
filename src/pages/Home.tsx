@@ -161,9 +161,7 @@ const Home = () => {
               Solicitar Presupuesto
               <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary hover-scale">
-              Hablar con un Experto
-            </Button>
+            
           </div>
         </div>
       </section>
