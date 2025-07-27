@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Cytek custom colors
+				cytek: {
+					blue: 'hsl(var(--cytek-blue))',
+					'blue-dark': 'hsl(var(--cytek-blue-dark))',
+					'blue-light': 'hsl(var(--cytek-blue-light))',
+					'grey-light': 'hsl(var(--cytek-grey-light))',
+					grey: 'hsl(var(--cytek-grey))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
