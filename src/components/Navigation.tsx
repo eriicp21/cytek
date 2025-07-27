@@ -8,10 +8,10 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Inicio', path: '/' },
+    { name: 'Servicios', path: '/services' },
+    { name: 'Nosotros', path: '/about' },
+    { name: 'Contacto', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -43,7 +43,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button className="ml-4">
-              Get a Quote
+              Solicitar Presupuesto
             </Button>
           </div>
 
@@ -81,7 +81,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <Button className="mx-3 mt-4">
-                Get a Quote
+                Solicitar Presupuesto
               </Button>
             </div>
           </div>
