@@ -13,8 +13,8 @@ const Footer = () => {
               Cytek
             </div>
             <p className="text-muted-foreground mb-4">
-              Professional IT solutions for small and medium-sized businesses. 
-              Trusted expertise in technology consulting and support.
+              Soluciones TI profesionales para pequeñas y medianas empresas. 
+              Experiencia de confianza en consultoría tecnológica y soporte especializado.
             </p>
             <div className="flex space-x-4">
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
@@ -22,28 +22,28 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">Navegación</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
-                  Home
+                  Inicio
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Services
+                  Servicios
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About Us
+                  Nosotros
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>
@@ -51,44 +51,54 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2">
-              <li className="text-muted-foreground">IT Consulting</li>
-              <li className="text-muted-foreground">Cloud Solutions</li>
-              <li className="text-muted-foreground">Cybersecurity</li>
-              <li className="text-muted-foreground">Network Management</li>
-              <li className="text-muted-foreground">24/7 Support</li>
+              <li className="text-muted-foreground">Servicios TI Gestionados</li>
+              <li className="text-muted-foreground">Soluciones de Ciberseguridad</li>
+              <li className="text-muted-foreground">Servicios Cloud</li>
+              <li className="text-muted-foreground">Gestión de Redes</li>
+              <li className="text-muted-foreground">Soporte 24/7</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact Info</h3>
+            <h3 className="font-semibold mb-4">Información de Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+34 900 123 456</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">info@cytek.com</span>
+                <span className="text-muted-foreground">info@cytek.es</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span className="text-muted-foreground">
-                  123 Business Ave<br />
-                  Suite 100<br />
-                  Tech City, TC 12345
+                  Calle Tecnología, 123<br />
+                  28001 Madrid<br />
+                  España
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Cytek. All rights reserved.
-          </p>
+        <div className="border-t border-border mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-muted-foreground text-center md:text-left">
+              © {new Date().getFullYear()} Cytek. Todos los derechos reservados.
+            </p>
+            <div className="flex space-x-6">
+              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                Política de Privacidad
+              </Link>
+              <Link to="/legal" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                Aviso Legal
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

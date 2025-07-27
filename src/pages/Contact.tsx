@@ -4,7 +4,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { 
   Mail, 
   Phone, 
@@ -20,28 +19,24 @@ import { useToast } from '@/hooks/use-toast';
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    service: '',
-    message: ''
+    nombreCompleto: '',
+    correoElectronico: '',
+    telefono: '',
+    mensaje: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate form submission
     toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: "¡Mensaje Enviado!",
+      description: "Nos pondremos en contacto contigo en las próximas 24 horas.",
     });
     setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      service: '',
-      message: ''
+      nombreCompleto: '',
+      correoElectronico: '',
+      telefono: '',
+      mensaje: ''
     });
   };
 
@@ -52,45 +47,45 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: 'Phone',
-      details: '+1 (555) 123-4567',
-      description: 'Call us for immediate assistance'
+      title: 'Teléfono',
+      details: '+34 900 123 456',
+      description: 'Llámanos para asistencia inmediata'
     },
     {
       icon: Mail,
-      title: 'Email',
-      details: 'info@cytek.com',
-      description: 'Send us your questions anytime'
+      title: 'Correo Electrónico',
+      details: 'info@cytek.es',
+      description: 'Envíanos tus consultas en cualquier momento'
     },
     {
       icon: MapPin,
-      title: 'Office',
-      details: '123 Business Ave, Suite 100\nTech City, TC 12345',
-      description: 'Visit our modern office space'
+      title: 'Oficina',
+      details: 'Calle Tecnología, 123\n28001 Madrid, España',
+      description: 'Visita nuestro moderno espacio de oficinas'
     },
     {
       icon: Clock,
-      title: 'Business Hours',
-      details: 'Mon-Fri: 8:00 AM - 6:00 PM\nSat: 9:00 AM - 2:00 PM',
-      description: 'Emergency support available 24/7'
+      title: 'Horario',
+      details: 'Lunes a Viernes: 9:00h - 17:00h\nSábados: 10:00h - 14:00h',
+      description: 'Soporte de emergencia disponible 24/7'
     }
   ];
 
   const reasons = [
     {
       icon: MessageSquare,
-      title: 'Free Consultation',
-      description: 'Get expert advice tailored to your business needs'
+      title: 'Consulta Gratuita',
+      description: 'Obtén asesoramiento experto adaptado a las necesidades de tu negocio'
     },
     {
       icon: Calendar,
-      title: 'Quick Response',
-      description: 'We respond to all inquiries within 4 hours'
+      title: 'Respuesta Rápida',
+      description: 'Respondemos a todas las consultas en un máximo de 4 horas'
     },
     {
       icon: Users,
-      title: 'Dedicated Team',
-      description: 'Work directly with our experienced professionals'
+      title: 'Equipo Dedicado',
+      description: 'Trabaja directamente con nuestros profesionales experimentados'
     }
   ];
 
@@ -98,108 +93,78 @@ const Contact = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Get in Touch
+            Ponte en Contacto
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your business with reliable IT solutions? 
-            Contact our team of experts today for a free consultation and discover 
-            how we can help your business thrive.
+            ¿Preparado para transformar tu empresa con soluciones TI fiables? 
+            Contacta con nuestro equipo de expertos hoy mismo para una consulta gratuita 
+            y descubre cómo podemos ayudar a que tu negocio prospere.
           </p>
         </div>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 animate-fade-in">
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+                <CardTitle className="text-2xl">Envíanos un Mensaje</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24 hours
+                  Completa el formulario y nos pondremos en contacto contigo en 24 horas
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Full Name *</Label>
-                      <Input
-                        id="name"
-                        value={formData.name}
-                        onChange={(e) => handleChange('name', e.target.value)}
-                        placeholder="John Doe"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="email">Email Address *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleChange('email', e.target.value)}
-                        placeholder="john@company.com"
-                        required
-                      />
-                    </div>
+                  <div>
+                    <Label htmlFor="nombreCompleto">Nombre Completo *</Label>
+                    <Input
+                      id="nombreCompleto"
+                      value={formData.nombreCompleto}
+                      onChange={(e) => handleChange('nombreCompleto', e.target.value)}
+                      placeholder="Juan Pérez"
+                      required
+                    />
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="company">Company Name</Label>
-                      <Input
-                        id="company"
-                        value={formData.company}
-                        onChange={(e) => handleChange('company', e.target.value)}
-                        placeholder="Your Company"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="phone">Phone Number</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleChange('phone', e.target.value)}
-                        placeholder="+1 (555) 123-4567"
-                      />
-                    </div>
+                  <div>
+                    <Label htmlFor="correoElectronico">Correo Electrónico *</Label>
+                    <Input
+                      id="correoElectronico"
+                      type="email"
+                      value={formData.correoElectronico}
+                      onChange={(e) => handleChange('correoElectronico', e.target.value)}
+                      placeholder="juan@empresa.com"
+                      required
+                    />
                   </div>
 
                   <div>
-                    <Label htmlFor="service">Service Interested In</Label>
-                    <Select onValueChange={(value) => handleChange('service', value)}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="cybersecurity">Cybersecurity Solutions</SelectItem>
-                        <SelectItem value="cloud">Cloud Migration & Management</SelectItem>
-                        <SelectItem value="infrastructure">IT Infrastructure Management</SelectItem>
-                        <SelectItem value="support">24/7 Technical Support</SelectItem>
-                        <SelectItem value="network">Network Design & Management</SelectItem>
-                        <SelectItem value="backup">Data Backup & Recovery</SelectItem>
-                        <SelectItem value="other">Other / Multiple Services</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Label htmlFor="telefono">Teléfono</Label>
+                    <Input
+                      id="telefono"
+                      type="tel"
+                      value={formData.telefono}
+                      onChange={(e) => handleChange('telefono', e.target.value)}
+                      placeholder="+34 600 123 456"
+                    />
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message *</Label>
+                    <Label htmlFor="mensaje">Mensaje *</Label>
                     <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleChange('message', e.target.value)}
-                      placeholder="Tell us about your IT needs and how we can help..."
+                      id="mensaje"
+                      value={formData.mensaje}
+                      onChange={(e) => handleChange('mensaje', e.target.value)}
+                      placeholder="Cuéntanos sobre tus necesidades tecnológicas y cómo podemos ayudarte..."
                       className="min-h-[120px]"
                       required
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    Send Message
+                  <Button type="submit" size="lg" className="w-full hover-scale">
+                    Enviar Mensaje
                     <Send className="ml-2 h-5 w-5" />
                   </Button>
                 </form>
@@ -208,9 +173,9 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="border-0 shadow-lg">
+              <Card key={index} className="border-0 shadow-lg hover-scale">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div className="p-3 bg-primary/10 rounded-lg">
@@ -233,18 +198,18 @@ const Contact = () => {
         </div>
 
         {/* Why Contact Us */}
-        <section className="bg-secondary rounded-2xl p-12 mb-16">
+        <section className="bg-secondary rounded-2xl p-12 mb-16 animate-fade-in">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Contact Cytek?</h2>
+            <h2 className="text-3xl font-bold mb-4">¿Por Qué Contactar con Cytek?</h2>
             <p className="text-muted-foreground">
-              We're here to help your business succeed with reliable IT solutions
+              Estamos aquí para ayudar a que tu empresa tenga éxito con soluciones TI fiables
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {reasons.map((reason, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit">
+                <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit hover-scale">
                   <reason.icon className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2">{reason.title}</h3>
@@ -255,58 +220,58 @@ const Contact = () => {
         </section>
 
         {/* FAQ Section */}
-        <section>
+        <section className="animate-fade-in">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold mb-4">Preguntas Frecuentes</h2>
             <p className="text-muted-foreground">
-              Quick answers to common questions about our services
+              Respuestas rápidas a consultas comunes sobre nuestros servicios
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold mb-2">How quickly can you respond to support requests?</h3>
+                <h3 className="font-semibold mb-2">¿Qué rapidez tienen vuestros tiempos de respuesta?</h3>
                 <p className="text-sm text-muted-foreground">
-                  We guarantee response within 4 hours for standard requests and 1 hour for critical issues. 
-                  Emergency support is available 24/7.
+                  Garantizamos respuesta en 4 horas para solicitudes estándar y 1 hora para problemas críticos. 
+                  El soporte de emergencia está disponible 24/7.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Do you work with businesses of all sizes?</h3>
+                <h3 className="font-semibold mb-2">¿Trabajáis con empresas de todos los tamaños?</h3>
                 <p className="text-sm text-muted-foreground">
-                  We specialize in small and medium-sized businesses (5-500 employees) and tailor our 
-                  solutions to fit your specific needs and budget.
+                  Nos especializamos en pequeñas y medianas empresas (5-500 empleados) y adaptamos 
+                  nuestras soluciones a tus necesidades específicas y presupuesto.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">What's included in your managed services?</h3>
+                <h3 className="font-semibold mb-2">¿Qué incluyen vuestros servicios gestionados?</h3>
                 <p className="text-sm text-muted-foreground">
-                  Our managed services include 24/7 monitoring, regular maintenance, security updates, 
-                  backup management, and unlimited support calls.
+                  Nuestros servicios gestionados incluyen monitoreo 24/7, mantenimiento regular, 
+                  actualizaciones de seguridad, gestión de copias de seguridad y llamadas de soporte ilimitadas.
                 </p>
               </div>
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold mb-2">Can you help with cloud migration?</h3>
+                <h3 className="font-semibold mb-2">¿Podéis ayudar con la migración a la nube?</h3>
                 <p className="text-sm text-muted-foreground">
-                  Yes, we provide comprehensive cloud migration services including planning, execution, 
-                  and ongoing management to ensure a smooth transition.
+                  Sí, proporcionamos servicios integrales de migración a la nube incluyendo planificación, 
+                  ejecución y gestión continua para garantizar una transición sin problemas.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Do you offer cybersecurity assessments?</h3>
+                <h3 className="font-semibold mb-2">¿Ofrecéis evaluaciones de ciberseguridad?</h3>
                 <p className="text-sm text-muted-foreground">
-                  We provide comprehensive security assessments to identify vulnerabilities and develop 
-                  strategies to protect your business from cyber threats.
+                  Proporcionamos evaluaciones completas de seguridad para identificar vulnerabilidades 
+                  y desarrollar estrategias para proteger tu empresa de amenazas cibernéticas.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">What are your service level agreements?</h3>
+                <h3 className="font-semibold mb-2">¿Cuáles son vuestros acuerdos de nivel de servicio?</h3>
                 <p className="text-sm text-muted-foreground">
-                  We offer 99.9% uptime guarantees with clearly defined SLAs for response times, 
-                  resolution targets, and performance metrics.
+                  Ofrecemos garantías de disponibilidad del 99,9% con SLA claramente definidos 
+                  para tiempos de respuesta, objetivos de resolución y métricas de rendimiento.
                 </p>
               </div>
             </div>

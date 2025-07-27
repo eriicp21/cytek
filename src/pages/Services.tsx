@@ -5,72 +5,104 @@ import {
   Shield, 
   Cloud, 
   Settings, 
-  HeadphonesIcon,
+  CheckCircle,
+  ArrowRight,
   Server,
-  MonitorSpeaker,
-  Network,
-  Database,
+  Monitor,
   Lock,
-  Smartphone,
-  Globe,
-  ArrowRight
+  Database,
+  Network,
+  HeadphonesIcon
 } from 'lucide-react';
 
 const Services = () => {
-  const services = [
+  const coreServices = [
     {
-      icon: Shield,
-      title: 'Cybersecurity Solutions',
-      description: 'Comprehensive protection against cyber threats with advanced firewalls, intrusion detection, and security monitoring.',
-      features: ['24/7 Security Monitoring', 'Threat Detection & Response', 'Employee Security Training', 'Compliance Auditing']
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud Migration & Management',
-      description: 'Seamless cloud adoption with scalable infrastructure solutions tailored to your business needs.',
-      features: ['Cloud Strategy Consulting', 'Migration Planning', 'Multi-Cloud Management', 'Cost Optimization']
-    },
-    {
+      id: 'managed-it',
       icon: Settings,
-      title: 'IT Infrastructure Management',
-      description: 'Proactive management of your IT systems to ensure optimal performance and minimal downtime.',
-      features: ['System Monitoring', 'Preventive Maintenance', 'Performance Optimization', 'Asset Management']
+      title: 'Servicios TI Gestionados',
+      image: 'photo-1531297484001-80022131f5a1',
+      description: 'Nuestros servicios TI gestionados proporcionan una gestión completa y proactiva de toda tu infraestructura tecnológica. Desde el monitoreo continuo hasta el mantenimiento preventivo, nos encargamos de que tus sistemas funcionen de manera óptima las 24 horas del día, los 7 días de la semana.',
+      detailedDescription: 'Con más de 15 años de experiencia en el sector, ofrecemos una gestión integral que abarca desde servidores físicos y virtuales hasta redes de comunicación y sistemas de almacenamiento. Nuestro enfoque proactivo previene problemas antes de que afecten a tu negocio, garantizando máxima disponibilidad y rendimiento.',
+      features: [
+        'Monitoreo 24/7 de todos los sistemas críticos',
+        'Mantenimiento preventivo programado',
+        'Gestión de actualizaciones y parches de seguridad',
+        'Soporte técnico remoto y presencial',
+        'Gestión de copias de seguridad automatizadas',
+        'Informes mensuales de rendimiento y estado',
+        'Planificación de capacidad y escalabilidad',
+        'Gestión de licencias de software'
+      ]
     },
     {
-      icon: HeadphonesIcon,
-      title: '24/7 Technical Support',
-      description: 'Round-the-clock expert support to keep your business running smoothly with rapid response times.',
-      features: ['Remote Support', 'On-site Assistance', 'Priority Escalation', 'Regular Health Checks']
+      id: 'cybersecurity',
+      icon: Shield,
+      title: 'Soluciones de Ciberseguridad',
+      image: 'photo-1518770660439-4636190af475',
+      description: 'Protegemos tu negocio contra las amenazas cibernéticas más avanzadas con soluciones de seguridad multicapa. Desde firewalls de nueva generación hasta sistemas de detección de intrusiones, implementamos las mejores prácticas de seguridad adaptadas a tu sector.',
+      detailedDescription: 'En un mundo donde las amenazas cibernéticas evolucionan constantemente, es crucial contar con una estrategia de seguridad robusta y actualizada. Nuestras soluciones incluyen evaluaciones de riesgo, implementación de controles de seguridad y formación de empleados para crear una cultura de ciberseguridad en tu organización.',
+      features: [
+        'Evaluación completa de vulnerabilidades',
+        'Implementación de firewalls avanzados',
+        'Sistemas de detección y prevención de intrusiones',
+        'Antivirus y anti-malware empresarial',
+        'Filtrado de correo electrónico y web',
+        'Formación en concienciación sobre seguridad',
+        'Planes de respuesta ante incidentes',
+        'Cumplimiento normativo (RGPD, LOPD)'
+      ]
+    },
+    {
+      id: 'cloud-services',
+      icon: Cloud,
+      title: 'Servicios Cloud',
+      image: 'photo-1487058792275-0ad4aaf24ca7',
+      description: 'Acelera la transformación digital de tu empresa con nuestras soluciones cloud personalizadas. Ofrecemos migración completa, gestión multi-cloud y optimización de costos para maximizar el retorno de inversión en tecnología cloud.',
+      detailedDescription: 'La nube ofrece flexibilidad, escalabilidad y eficiencia que las empresas modernas necesitan para competir. Nuestros expertos certificados te guían en todo el proceso de adopción cloud, desde la estrategia inicial hasta la optimización continua, garantizando una transición sin interrupciones.',
+      features: [
+        'Estrategia y planificación de migración cloud',
+        'Migración de aplicaciones y datos',
+        'Gestión de infraestructura multi-cloud',
+        'Optimización de costos cloud',
+        'Backup y recuperación en la nube',
+        'Monitoreo y gestión de rendimiento',
+        'Implementación de DevOps y automatización',
+        'Soporte y mantenimiento continuo'
+      ]
+    }
+  ];
+
+  const additionalServices = [
+    {
+      icon: Server,
+      title: 'Gestión de Servidores',
+      description: 'Administración completa de servidores físicos y virtuales'
     },
     {
       icon: Network,
-      title: 'Network Design & Management',
-      description: 'Design, implement, and manage robust network infrastructure for reliable connectivity.',
-      features: ['Network Architecture', 'WiFi Solutions', 'VPN Setup', 'Bandwidth Optimization']
+      title: 'Redes y Comunicaciones',
+      description: 'Diseño e implementación de infraestructuras de red'
     },
     {
       icon: Database,
-      title: 'Data Backup & Recovery',
-      description: 'Comprehensive data protection strategies to safeguard your business-critical information.',
-      features: ['Automated Backups', 'Disaster Recovery Planning', 'Data Encryption', 'Recovery Testing']
+      title: 'Gestión de Bases de Datos',
+      description: 'Optimización y mantenimiento de bases de datos empresariales'
     },
     {
-      icon: MonitorSpeaker,
-      title: 'Hardware Procurement',
-      description: 'Expert guidance on technology purchases with volume discounts and lifecycle management.',
-      features: ['Hardware Assessment', 'Vendor Negotiations', 'Installation Services', 'Warranty Management']
+      icon: Monitor,
+      title: 'Soporte de Usuario Final',
+      description: 'Asistencia técnica para empleados y equipos de trabajo'
     },
     {
-      icon: Smartphone,
-      title: 'Mobile Device Management',
-      description: 'Secure and efficient management of mobile devices and applications across your organization.',
-      features: ['Device Provisioning', 'App Management', 'Security Policies', 'Remote Wipe Capabilities']
+      icon: Lock,
+      title: 'Auditorías de Seguridad',
+      description: 'Evaluaciones periódicas de seguridad y cumplimiento'
     },
     {
-      icon: Globe,
-      title: 'Web Development & Hosting',
-      description: 'Professional website development and reliable hosting solutions to establish your online presence.',
-      features: ['Custom Web Development', 'E-commerce Solutions', 'SSL Certificates', 'Performance Monitoring']
+      icon: HeadphonesIcon,
+      title: 'Mesa de Ayuda 24/7',
+      description: 'Soporte técnico disponible las 24 horas del día'
     }
   ];
 
@@ -78,51 +110,106 @@ const Services = () => {
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Our IT Services
+            Nuestros Servicios
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive technology solutions designed to help small and medium-sized 
-            businesses thrive in today's digital landscape. From cybersecurity to cloud 
-            migration, we've got you covered.
+            Soluciones tecnológicas integrales diseñadas para impulsar el crecimiento 
+            y la eficiencia de empresas pequeñas y medianas en el entorno digital actual.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg h-full">
-              <CardHeader>
-                <div className="mb-4 p-3 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="h-8 w-8 text-primary" />
+        {/* Core Services Detailed Sections */}
+        <div className="space-y-20 mb-20">
+          {coreServices.map((service, index) => (
+            <section key={service.id} className="animate-fade-in">
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+              }`}>
+                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                  <div className="flex items-center mb-6">
+                    <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                      <service.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <h2 className="text-3xl font-bold">{service.title}</h2>
+                  </div>
+                  
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
+                  
+                  <p className="text-muted-foreground mb-8 leading-relaxed">
+                    {service.detailedDescription}
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                    {service.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-start space-x-3">
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Button className="hover-scale">
+                    Más Información
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </div>
-                <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                <CardDescription className="text-sm">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start space-x-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-sm text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+
+                <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                  <div className="relative">
+                    <img
+                      src={`https://images.unsplash.com/${service.image}?w=600&h=400&fit=crop&auto=format`}
+                      alt={service.title}
+                      className="rounded-xl shadow-lg w-full h-80 object-cover hover-scale"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-xl"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
           ))}
         </div>
 
-        {/* Process Section */}
-        <section className="py-16 bg-secondary rounded-2xl mb-16">
+        {/* Additional Services */}
+        <section className="py-16 bg-secondary rounded-2xl mb-16 animate-fade-in">
           <div className="max-w-5xl mx-auto px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Our Process</h2>
+              <h2 className="text-3xl font-bold mb-4">Servicios Adicionales</h2>
               <p className="text-muted-foreground">
-                A proven methodology that ensures successful project delivery and long-term success
+                Amplía las capacidades de tu empresa con nuestros servicios especializados
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {additionalServices.map((service, index) => (
+                <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover-scale">
+                  <CardHeader className="text-center">
+                    <div className="mx-auto mb-3 p-3 bg-primary/10 rounded-lg w-fit">
+                      <service.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-center text-sm">
+                      {service.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="py-16 bg-gradient-to-br from-background to-secondary/50 rounded-2xl mb-16 animate-fade-in">
+          <div className="max-w-5xl mx-auto px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Nuestro Proceso</h2>
+              <p className="text-muted-foreground">
+                Una metodología probada que garantiza la entrega exitosa de proyectos
               </p>
             </div>
             
@@ -130,27 +217,27 @@ const Services = () => {
               {[
                 {
                   step: '01',
-                  title: 'Assessment',
-                  description: 'We analyze your current IT infrastructure and identify improvement opportunities'
+                  title: 'Análisis',
+                  description: 'Evaluamos tu infraestructura actual e identificamos oportunidades de mejora'
                 },
                 {
                   step: '02',
-                  title: 'Strategy',
-                  description: 'Develop a customized technology roadmap aligned with your business goals'
+                  title: 'Estrategia',
+                  description: 'Desarrollamos una hoja de ruta tecnológica personalizada y alineada con tus objetivos'
                 },
                 {
                   step: '03',
-                  title: 'Implementation',
-                  description: 'Execute the solution with minimal disruption to your business operations'
+                  title: 'Implementación',
+                  description: 'Ejecutamos la solución con mínima interrupción de tus operaciones comerciales'
                 },
                 {
                   step: '04',
-                  title: 'Support',
-                  description: 'Provide ongoing monitoring, maintenance, and support for optimal performance'
+                  title: 'Soporte',
+                  description: 'Proporcionamos monitoreo, mantenimiento y soporte continuo para un rendimiento óptimo'
                 }
               ].map((process, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+                  <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 hover-scale">
                     {process.step}
                   </div>
                   <h3 className="font-semibold mb-2">{process.title}</h3>
@@ -162,22 +249,22 @@ const Services = () => {
         </section>
 
         {/* CTA Section */}
-        <div className="text-center">
+        <div className="text-center animate-fade-in">
           <div className="bg-gradient-to-r from-primary to-cytek-blue-dark text-white rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Transform Your IT Infrastructure?
+              ¿Listo para transformar tu infraestructura TI?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Let our experts design a comprehensive IT solution that grows with your business. 
-              Get started with a free consultation today.
+              Permítenos diseñar una solución TI integral que crezca con tu empresa. 
+              Comienza con una consulta gratuita hoy mismo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-primary font-semibold">
-                Get Free Consultation
+              <Button size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
+                Consulta Gratuita
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                Download Service Guide
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary hover-scale">
+                Descargar Guía de Servicios
               </Button>
             </div>
           </div>
