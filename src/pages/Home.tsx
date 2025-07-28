@@ -44,8 +44,8 @@ const Home = () => {
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
-                Impulsa tu negocio con 
-                <span className="block text-blue-200">soluciones TI avanzadas</span>
+                Soluciones TI Modernas para el 
+                <span className="block text-blue-200">Crecimiento de tu Negocio</span>
               </h1>
               <p className="text-lg lg:text-xl text-blue-100 leading-relaxed animate-stagger-fade-in-2">
                 Servicios tecnológicos profesionales que transforman tu infraestructura TI para maximizar la eficiencia, seguridad y crecimiento de tu empresa.
