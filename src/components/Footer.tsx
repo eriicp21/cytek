@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
+              
             </div>
           </div>
 
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">info@cytek.es</span>
+                <span className="text-muted-foreground">contacto@cytek.es</span>
               </div>
               
             </div>
@@ -83,10 +83,10 @@ const Footer = () => {
               © {new Date().getFullYear()} Cytek. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6">
-              <Link to="/politica-de-privacidad" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Política de Privacidad
               </Link>
-              <Link to="/aviso-legal" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link to="/legal" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Aviso Legal
               </Link>
             </div>
