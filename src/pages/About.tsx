@@ -1,83 +1,68 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { 
-  Award,
-  Users,
-  Target,
-  Clock,
-  CheckCircle,
-  ArrowRight,
-  Linkedin
-} from 'lucide-react';
+import { Award, Users, Target, Clock, CheckCircle, ArrowRight, Linkedin } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
-
 const About = () => {
   useSEO({
     title: 'Sobre Nosotros | Expertos TI desde 2008 - Cytek',
     description: 'Conoce al equipo de Cytek. Más de 15 años de experiencia ofreciendo soluciones TI empresariales a pymes. Valores, misión y compromiso con la excelencia.'
   });
-
-  const values = [
-    {
-      icon: Target,
-      title: 'Excelencia',
-      description: 'Nos esforzamos por la excelencia en cada proyecto, entregando soluciones que superan expectativas e impulsan el éxito empresarial.'
-    },
-    {
-      icon: Users,
-      title: 'Colaboración',
-      description: 'Construimos alianzas a largo plazo con nuestros clientes, entendiendo sus necesidades únicas y creciendo juntos.'
-    },
-    {
-      icon: Award,
-      title: 'Innovación',
-      description: 'Nos mantenemos a la vanguardia de las tendencias tecnológicas para proporcionar soluciones de vanguardia que mantienen competitivos a nuestros clientes.'
-    },
-    {
-      icon: Clock,
-      title: 'Fiabilidad',
-      description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
-    }
-  ];
-
-  const team = [
-    {
-      name: 'Carlos Mendoza',
-      role: 'CEO y Fundador',
-      description: 'Más de 20 años de experiencia en soluciones TI empresariales y estrategia de negocio.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
-    },
-    {
-      name: 'Ana Rodríguez',
-      role: 'Directora Técnica',
-      description: 'Experta en arquitectura cloud y ciberseguridad con más de 15 años en el sector.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b618?w=400&h=400&fit=crop&auto=format'
-    },
-    {
-      name: 'Miguel Santos',
-      role: 'VP de Operaciones',
-      description: 'Especialista en infraestructura TI y gestión de proyectos para clientes pyme.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format'
-    },
-    {
-      name: 'Laura Fernández',
-      role: 'Directora de Éxito del Cliente',
-      description: 'Dedicada a asegurar que nuestros clientes obtengan el máximo valor de sus inversiones TI.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
-    }
-  ];
-
-  const milestones = [
-    { year: '2008', event: 'Fundamos Cytek con la visión de democratizar la TI empresarial para pymes' },
-    { year: '2012', event: 'Expandimos a servicios cloud, ayudando a más de 100 empresas a migrar a la nube' },
-    { year: '2016', event: 'Lanzamos centro de soporte 24/7 con tiempos de respuesta líderes en la industria' },
-    { year: '2020', event: 'Alcanzamos garantía de disponibilidad del 99,9% y crecimos a servir más de 500 clientes' },
-    { year: '2024', event: 'Reconocidos como proveedor líder de servicios TI con ofertas avanzadas de ciberseguridad' }
-  ];
-
-  return (
-    <div className="min-h-screen py-20">
+  const values = [{
+    icon: Target,
+    title: 'Excelencia',
+    description: 'Nos esforzamos por la excelencia en cada proyecto, entregando soluciones que superan expectativas e impulsan el éxito empresarial.'
+  }, {
+    icon: Users,
+    title: 'Colaboración',
+    description: 'Construimos alianzas a largo plazo con nuestros clientes, entendiendo sus necesidades únicas y creciendo juntos.'
+  }, {
+    icon: Award,
+    title: 'Innovación',
+    description: 'Nos mantenemos a la vanguardia de las tendencias tecnológicas para proporcionar soluciones de vanguardia que mantienen competitivos a nuestros clientes.'
+  }, {
+    icon: Clock,
+    title: 'Fiabilidad',
+    description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
+  }];
+  const team = [{
+    name: 'Carlos Mendoza',
+    role: 'CEO y Fundador',
+    description: 'Más de 20 años de experiencia en soluciones TI empresariales y estrategia de negocio.',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
+  }, {
+    name: 'Ana Rodríguez',
+    role: 'Directora Técnica',
+    description: 'Experta en arquitectura cloud y ciberseguridad con más de 15 años en el sector.',
+    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b618?w=400&h=400&fit=crop&auto=format'
+  }, {
+    name: 'Miguel Santos',
+    role: 'VP de Operaciones',
+    description: 'Especialista en infraestructura TI y gestión de proyectos para clientes pyme.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format'
+  }, {
+    name: 'Laura Fernández',
+    role: 'Directora de Éxito del Cliente',
+    description: 'Dedicada a asegurar que nuestros clientes obtengan el máximo valor de sus inversiones TI.',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
+  }];
+  const milestones = [{
+    year: '2008',
+    event: 'Fundamos Cytek con la visión de democratizar la TI empresarial para pymes'
+  }, {
+    year: '2012',
+    event: 'Expandimos a servicios cloud, ayudando a más de 100 empresas a migrar a la nube'
+  }, {
+    year: '2016',
+    event: 'Lanzamos centro de soporte 24/7 con tiempos de respuesta líderes en la industria'
+  }, {
+    year: '2020',
+    event: 'Alcanzamos garantía de disponibilidad del 99,9% y crecimos a servir más de 500 clientes'
+  }, {
+    year: '2024',
+    event: 'Reconocidos como proveedor líder de servicios TI con ofertas avanzadas de ciberseguridad'
+  }];
+  return <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -134,8 +119,7 @@ const About = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300">
+            {values.map((value, index) => <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300">
                 <CardHeader>
                   <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit group-hover:bg-primary/20 transition-colors">
                     <value.icon className="h-8 w-8 text-primary" />
@@ -147,8 +131,7 @@ const About = () => {
                     {value.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </section>
 
@@ -162,15 +145,10 @@ const About = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
+            {team.map((member, index) => <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
                 <CardHeader>
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
                   <CardDescription className="text-primary font-semibold">
@@ -183,8 +161,7 @@ const About = () => {
                   </p>
                   <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer mx-auto transition-colors" />
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </section>
 
@@ -198,8 +175,7 @@ const About = () => {
           </div>
           
           <div className="space-y-8">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="flex items-start space-x-6 animate-fade-in">
+            {milestones.map((milestone, index) => <div key={index} className="flex items-start space-x-6 animate-fade-in">
                 <div className="flex-shrink-0 w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center font-bold hover-scale">
                   {milestone.year}
                 </div>
@@ -208,8 +184,7 @@ const About = () => {
                     {milestone.event}
                   </p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </section>
 
@@ -221,19 +196,10 @@ const About = () => {
                 Por Qué las Empresas Eligen Cytek
               </h2>
               <div className="space-y-4">
-                {[
-                  'Historial probado con más de 500 clientes satisfechos',
-                  'Garantía de disponibilidad del 99,9% respaldada por SLA',
-                  'Soporte experto 24/7 con tiempos de respuesta rápidos',
-                  'Soluciones adaptadas a tu sector específico',
-                  'Precios transparentes sin costos ocultos',
-                  'Monitoreo y mantenimiento proactivo'
-                ].map((reason, index) => (
-                  <div key={index} className="flex items-center space-x-3 animate-fade-in">
+                {['Historial probado con más de 500 clientes satisfechos', 'Garantía de disponibilidad del 99,9% respaldada por SLA', 'Soporte experto 24/7 con tiempos de respuesta rápidos', 'Soluciones adaptadas a tu sector específico', 'Precios transparentes sin costos ocultos', 'Monitoreo y mantenimiento proactivo'].map((reason, index) => <div key={index} className="flex items-center space-x-3 animate-fade-in">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-muted-foreground">{reason}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -249,17 +215,13 @@ const About = () => {
                     Programar una Consulta
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                  <Button variant="outline" className="w-full hover-scale" size="lg">
-                    Descargar Perfil de Empresa
-                  </Button>
+                  
                 </div>
               </div>
             </Card>
           </div>
         </section>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
