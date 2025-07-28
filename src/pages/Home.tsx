@@ -46,7 +46,7 @@ const Home = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight bg-blue-700/[0.71]">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Soluciones TI Modernas para el 
               <span className="block text-blue-200">Crecimiento de tu Negocio</span>
             </h1>
