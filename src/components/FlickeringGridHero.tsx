@@ -36,7 +36,7 @@ const GRID_CONFIG = {
 
 export const FlickeringGridHero = () => {
   return (
-    <div className="relative w-full h-96 flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
       <FlickeringGrid
         className={`absolute inset-0 z-0 [mask-image:radial-gradient(1000px_circle_at_center,white,transparent)] motion-safe:animate-pulse`}
         {...GRID_CONFIG.background}
