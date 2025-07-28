@@ -6,8 +6,8 @@ import { useSEO } from '@/hooks/useSEO';
 import React from 'react';
 const About = () => {
   useSEO({
-    title: 'Sobre Nosotros | Expertos TI desde 2008 - Cytek',
-    description: 'Conoce al equipo de Cytek. Más de 15 años de experiencia ofreciendo soluciones TI empresariales a pymes. Valores, misión y compromiso con la excelencia.'
+    title: 'Sobre Nosotros | Soluciones TI Innovadoras - Cytek',
+    description: 'Conoce al equipo de Cytek. Empresa joven con visión innovadora ofreciendo soluciones TI modernas para pymes. Valores, misión y compromiso con la excelencia.'
   });
   const values = [{
     icon: Target,
@@ -29,12 +29,12 @@ const About = () => {
   const team = [{
     name: 'Carlos Mendoza',
     role: 'CEO y Fundador',
-    description: 'Más de 20 años de experiencia en soluciones TI empresariales y estrategia de negocio.',
+    description: 'Visionario con experiencia en soluciones TI empresariales y estrategia de negocio.',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
   }, {
     name: 'Ana Rodríguez',
     role: 'Directora Técnica',
-    description: 'Experta en arquitectura cloud y ciberseguridad con más de 15 años en el sector.',
+    description: 'Experta en arquitectura cloud y ciberseguridad con sólida formación técnica.',
     image: 'https://images.unsplash.com/photo-1494790108755-2616b612b618?w=400&h=400&fit=crop&auto=format'
   }, {
     name: 'Miguel Santos',
@@ -48,20 +48,20 @@ const About = () => {
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
   }];
   const milestones = [{
-    year: '2008',
+    year: '2024',
     event: 'Fundamos Cytek con la visión de democratizar la TI empresarial para pymes'
   }, {
-    year: '2012',
-    event: 'Expandimos a servicios cloud, ayudando a más de 100 empresas a migrar a la nube'
-  }, {
-    year: '2016',
-    event: 'Lanzamos centro de soporte 24/7 con tiempos de respuesta líderes en la industria'
-  }, {
-    year: '2020',
-    event: 'Alcanzamos garantía de disponibilidad del 99,9% y crecimos a servir más de 500 clientes'
+    year: '2024',
+    event: 'Lanzamos nuestros servicios principales: TI gestionada, ciberseguridad y cloud'
   }, {
     year: '2024',
-    event: 'Reconocidos como proveedor líder de servicios TI con ofertas avanzadas de ciberseguridad'
+    event: 'Establecimos alianzas estratégicas con proveedores tecnológicos líderes'
+  }, {
+    year: '2024',
+    event: 'Iniciamos operaciones con un enfoque innovador en soporte proactivo'
+  }, {
+    year: '2025',
+    event: 'Expandimos nuestro portafolio con servicios de diseño y desarrollo web'
   }];
   return <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -193,7 +193,7 @@ const About = () => {
                 Por Qué las Empresas Eligen Cytek
               </h2>
               <div className="space-y-4">
-                {['Historial probado con más de 500 clientes satisfechos', 'Garantía de disponibilidad del 99,9% respaldada por SLA', 'Soporte experto 24/7 con tiempos de respuesta rápidos', 'Soluciones adaptadas a tu sector específico', 'Precios transparentes sin costos ocultos', 'Monitoreo y mantenimiento proactivo'].map((reason, index) => <div key={index} className="flex items-center space-x-3 animate-fade-in">
+                {['Equipo altamente capacitado y certificado', 'Compromiso con la disponibilidad y confiabilidad', 'Soporte técnico especializado y personalizado', 'Soluciones adaptadas a tu sector específico', 'Precios transparentes sin costos ocultos', 'Monitoreo y mantenimiento proactivo'].map((reason, index) => <div key={index} className="flex items-center space-x-3 animate-fade-in">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-muted-foreground">{reason}</span>
                   </div>)}
@@ -204,8 +204,7 @@ const About = () => {
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-4">¿Listo para Asociarte con Nosotros?</h3>
                 <p className="text-muted-foreground mb-6">
-                  Únete a cientos de empresas que confían en Cytek para sus necesidades TI. 
-                  Hablemos sobre cómo podemos ayudar a que tu negocio crezca.
+                  Comienza tu transformación digital con Cytek. Descubre cómo nuestro enfoque innovador puede ayudar a que tu negocio crezca.
                 </p>
                 <div className="space-y-4">
                   <Button asChild className="w-full hover-scale" size="lg">
