@@ -8,11 +8,11 @@ const LOGO_BASE64 = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
 const maskStyle = {
   WebkitMaskImage: `url('${LOGO_BASE64}')`,
   WebkitMaskSize: '22vw',
-  WebkitMaskPosition: 'top',
+  WebkitMaskPosition: 'center',
   WebkitMaskRepeat: 'no-repeat',
   maskImage: `url('${LOGO_BASE64}')`,
   maskSize: '22vw',
-  maskPosition: 'top',
+  maskPosition: 'center',
   maskRepeat: 'no-repeat',
 } as const;
 
