@@ -54,13 +54,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Teléfono',
-      details: '+34 900 123 456',
+      details: '+34 633 145 270',
       description: 'Llámanos para asistencia inmediata'
     },
     {
       icon: Mail,
       title: 'Correo Electrónico',
-      details: 'info@cytek.es',
+      details: 'contacto@cytek.es',
       description: 'Envíanos tus consultas en cualquier momento'
     },
     {
