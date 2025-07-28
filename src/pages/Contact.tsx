@@ -64,12 +64,6 @@ const Contact = () => {
       description: 'Envíanos tus consultas en cualquier momento'
     },
     {
-      icon: MapPin,
-      title: 'Oficina',
-      details: 'Calle Tecnología, 123\n28001 Madrid, España',
-      description: 'Visita nuestro moderno espacio de oficinas'
-    },
-    {
       icon: Clock,
       title: 'Horario',
       details: 'Lunes a Viernes: 9:00h - 17:00h\nSábados: 10:00h - 14:00h',
