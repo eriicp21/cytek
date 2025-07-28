@@ -10,15 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="mb-4">
               <img 
                 src={cytekLogo} 
                 alt="Cytek" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
-              <div className="text-2xl font-bold text-primary">
-                Cytek
-              </div>
             </div>
             <p className="text-muted-foreground mb-4">
               Soluciones TI profesionales para pequeñas y medianas empresas. 

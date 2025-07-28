@@ -22,15 +22,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center">
             <img 
               src={cytekLogo} 
               alt="Cytek" 
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
-            <div className="text-2xl font-bold text-primary hidden sm:block">
-              Cytek
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
