@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Server, Monitor, Lock, Database, Network, HeadphonesIcon } from 'lucide-react';
+import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Server, Monitor, Lock, Database, Network, Globe } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import React from 'react';
 const Services = () => {
@@ -55,9 +55,9 @@ const Services = () => {
     title: 'Auditorías de Seguridad',
     description: 'Evaluaciones periódicas de seguridad y cumplimiento'
   }, {
-    icon: HeadphonesIcon,
-    title: 'Mesa de Ayuda 24/7',
-    description: 'Soporte técnico disponible las 24 horas del día'
+    icon: Globe,
+    title: 'Diseño y Desarrollo Web',
+    description: 'Creación de sitios web profesionales y aplicaciones empresariales'
   }];
   return <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
