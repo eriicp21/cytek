@@ -23,7 +23,7 @@ const About = () => {
     description: 'Nos mantenemos a la vanguardia de las tendencias tecnológicas para proporcionar soluciones de vanguardia que mantienen competitivos a nuestros clientes.'
   }, {
     icon: Clock,
-    title: 'Fiabilidad',
+    title: 'Cercanía',
     description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
   }];
   const team = [{
