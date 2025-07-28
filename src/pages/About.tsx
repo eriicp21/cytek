@@ -158,7 +158,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground mb-4">
                     {team[0].description}
                   </p>
-                  <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer mx-auto transition-colors" />
+                  
                 </CardContent>
               </Card>
             </div>
