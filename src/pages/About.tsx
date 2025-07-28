@@ -29,8 +29,8 @@ const About = () => {
   const team = [{
     name: 'Pol García',
     role: 'CEO y Fundador',
-    description: 'Apasionado por democratizar la tecnología empresarial y crear soluciones que realmente impulsen el crecimiento de las pymes.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
+    description: 'Fundé Cytek con la convicción de que cada empresa merece acceso a tecnología de calidad. Me motiva ayudar a los empresarios a transformar sus desafíos tecnológicos en oportunidades de crecimiento.',
+    image: '/lovable-uploads/df21ddc2-5362-4f88-ae30-8e365c6db0af.png'
   }, {
     name: 'Ana Rodríguez',
     role: 'Directora Técnica',
