@@ -26,7 +26,7 @@ const GRID_CONFIG = {
     gridGap: 4,
   },
   logo: {
-    color: "#7C3AED",
+    color: "#ffffff",
     maxOpacity: 0.65,
     flickerChance: 0.18,
     squareSize: 3,
