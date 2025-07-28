@@ -69,11 +69,7 @@ const About = () => {
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             Sobre Cytek
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Desde 2008, hemos estado empoderando a pequeñas y medianas empresas con 
-            soluciones TI de nivel empresarial. Nuestra misión es simple: hacer que la tecnología 
-            avanzada sea accesible, asequible y efectiva para empresas en crecimiento.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">En Cytek, ayudamos a pequeñas y medianas empresas a crecer con soluciones TI modernas, accesibles y efectivas. Aunque somos una empresa joven, nacimos con una misión clara: acercar la tecnología de nivel empresarial a quienes más la necesitan, con un enfoque cercano, ágil y transparente.</p>
         </div>
 
         {/* Mission & Vision */}
