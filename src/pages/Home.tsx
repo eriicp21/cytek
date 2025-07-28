@@ -38,43 +38,39 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-teal))] to-[hsl(var(--cytek-teal-dark))]">
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-blue-dark))] to-[hsl(var(--cytek-blue))]">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
-                Soluciones TI 
-                <span className="block text-teal-200">más poderosas</span>
+                Impulsa tu negocio con 
+                <span className="block text-blue-200">soluciones TI avanzadas</span>
               </h1>
-              <p className="text-lg lg:text-xl text-gray-200 leading-relaxed animate-stagger-fade-in-2">
-                Impulsados por soluciones de primera línea, creamos experiencias tecnológicas personalizadas en todos los canales con nuestra plataforma de servicios TI potenciada por IA.
+              <p className="text-lg lg:text-xl text-blue-100 leading-relaxed animate-stagger-fade-in-2">
+                Servicios tecnológicos profesionales que transforman tu infraestructura TI para maximizar la eficiencia, seguridad y crecimiento de tu empresa.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-stagger-fade-in-3">
-                <Button asChild size="lg" className="bg-teal-200 hover:bg-teal-100 text-[hsl(var(--cytek-teal))] font-semibold transition-all duration-300 hover:scale-105">
+              <div className="animate-stagger-fade-in-3">
+                <Button asChild size="lg" className="bg-white hover:bg-blue-50 text-[hsl(var(--cytek-blue))] font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
                   <Link to="/contact">
-                    Empezar
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 transition-all duration-300">
-                  <Link to="/contact">
-                    Solicitar Demo
+                    Solicitar Presupuesto
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-6 text-sm text-teal-100 animate-stagger-fade-in-4">
+              <div className="flex flex-col sm:flex-row gap-6 text-sm text-blue-100 animate-stagger-fade-in-4">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-teal-200" />
-                  <span>Prueba gratuita de 14 días</span>
+                  <CheckCircle className="h-4 w-4 text-blue-200" />
+                  <span>Consulta gratuita</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-teal-200" />
-                  <span>Sin tarjeta de crédito requerida</span>
+                  <CheckCircle className="h-4 w-4 text-blue-200" />
+                  <span>Soporte 24/7</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-teal-200" />
-                  <span>Cancelar en cualquier momento</span>
+                  <CheckCircle className="h-4 w-4 text-blue-200" />
+                  <span>Soluciones personalizadas</span>
                 </div>
               </div>
             </div>
