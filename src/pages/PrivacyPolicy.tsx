@@ -92,8 +92,8 @@ const PrivacyPolicy = () => {
                 sus derechos, puede contactarnos en:
               </p>
               <div className="bg-muted/50 p-4 rounded-lg">
-                <p className="font-medium">Email: info@cytek.es</p>
-                <p className="font-medium">Teléfono: +34 912 345 678</p>
+                <p className="font-medium">Email: contacto@cytek.es</p>
+                <p className="font-medium">Teléfono: +34 633 145 270</p>
               </div>
             </section>
 
