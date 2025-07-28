@@ -1,8 +1,9 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Server, Monitor, Lock, Database, Network, HeadphonesIcon } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
+import React from 'react';
 const Services = () => {
   useSEO({
     title: 'Servicios TI | Ciberseguridad y Cloud - Cytek',
@@ -98,9 +99,11 @@ const Services = () => {
                       </div>)}
                   </div>
 
-                  <Button className="hover-scale">
-                    Más Información
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <Button asChild className="hover-scale">
+                    <Link to="/contact">
+                      Más Información
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
                   </Button>
                 </div>
 
@@ -191,9 +194,11 @@ const Services = () => {
               Comienza con una consulta gratuita hoy mismo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-                Consulta Gratuita
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
+                <Link to="/contact">
+                  Consulta Gratuita
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               
             </div>

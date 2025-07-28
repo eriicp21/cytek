@@ -1,8 +1,9 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Award, Users, Target, Clock, CheckCircle, ArrowRight, Linkedin } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
+import React from 'react';
 const About = () => {
   useSEO({
     title: 'Sobre Nosotros | Expertos TI desde 2008 - Cytek',
@@ -207,9 +208,11 @@ const About = () => {
                   Hablemos sobre cómo podemos ayudar a que tu negocio crezca.
                 </p>
                 <div className="space-y-4">
-                  <Button className="w-full hover-scale" size="lg">
-                    Programar una Consulta
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <Button asChild className="w-full hover-scale" size="lg">
+                    <Link to="/contact">
+                      Programar una Consulta
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
                   </Button>
                   
                 </div>
