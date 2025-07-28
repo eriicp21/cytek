@@ -15,7 +15,7 @@ const Services = () => {
     title: 'Servicios TI Gestionados',
     image: 'photo-1531297484001-80022131f5a1',
     description: 'Nuestros servicios TI gestionados proporcionan una gestión completa y proactiva de toda tu infraestructura tecnológica. Desde el monitoreo continuo hasta el mantenimiento preventivo, nos encargamos de que tus sistemas funcionen de manera óptima las 24 horas del día, los 7 días de la semana.',
-    detailedDescription: 'Con más de 15 años de experiencia en el sector, ofrecemos una gestión integral que abarca desde servidores físicos y virtuales hasta redes de comunicación y sistemas de almacenamiento. Nuestro enfoque proactivo previene problemas antes de que afecten a tu negocio, garantizando máxima disponibilidad y rendimiento.',
+    detailedDescription: 'Fundados con una visión innovadora y enfoque en la excelencia, ofrecemos una gestión integral que abarca desde servidores físicos y virtuales hasta redes de comunicación y sistemas de almacenamiento. Nuestro enfoque proactivo previene problemas antes de que afecten a tu negocio, garantizando máxima disponibilidad y rendimiento.',
     features: ['Monitoreo 24/7 de todos los sistemas críticos', 'Mantenimiento preventivo programado', 'Gestión de actualizaciones y parches de seguridad', 'Soporte técnico remoto y presencial', 'Gestión de copias de seguridad automatizadas', 'Informes mensuales de rendimiento y estado', 'Planificación de capacidad y escalabilidad', 'Gestión de licencias de software']
   }, {
     id: 'cybersecurity',
