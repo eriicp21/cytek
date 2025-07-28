@@ -15,8 +15,14 @@ import {
   Users
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useSEO } from '@/hooks/useSEO';
 
 const Contact = () => {
+  useSEO({
+    title: 'Contacto | Consulta Gratuita TI - Cytek',
+    description: 'Contacta con Cytek para una consulta gratuita. Soporte 24/7, respuesta en 4 horas. Llámanos al +34 900 123 456 o envía un mensaje.'
+  });
+
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     nombreCompleto: '',

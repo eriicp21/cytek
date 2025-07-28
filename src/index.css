@@ -129,4 +129,27 @@ All colors MUST be HSL.
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
+  
+  /* Mobile optimizations */
+  @media (max-width: 767px) {
+    .btn {
+      min-height: 48px;
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+    
+    /* Prevent zoom on input focus on iOS */
+    input, textarea, select {
+      font-size: 16px;
+    }
+    
+    /* Better mobile spacing */
+    .mobile-padding {
+      padding: 16px;
+    }
+    
+    .mobile-spacing {
+      margin-bottom: 24px;
+    }
+  }
 }

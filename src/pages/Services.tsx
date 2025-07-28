@@ -14,8 +14,14 @@ import {
   Network,
   HeadphonesIcon
 } from 'lucide-react';
+import { useSEO } from '@/hooks/useSEO';
 
 const Services = () => {
+  useSEO({
+    title: 'Servicios TI | Ciberseguridad y Cloud - Cytek',
+    description: 'Servicios TI gestionados, soluciones de ciberseguridad y migración cloud para pymes. Soporte 24/7 y gestión proactiva de infraestructura.'
+  });
+
   const coreServices = [
     {
       id: 'managed-it',

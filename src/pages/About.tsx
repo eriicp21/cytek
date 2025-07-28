@@ -10,8 +10,14 @@ import {
   ArrowRight,
   Linkedin
 } from 'lucide-react';
+import { useSEO } from '@/hooks/useSEO';
 
 const About = () => {
+  useSEO({
+    title: 'Sobre Nosotros | Expertos TI desde 2008 - Cytek',
+    description: 'Conoce al equipo de Cytek. Más de 15 años de experiencia ofreciendo soluciones TI empresariales a pymes. Valores, misión y compromiso con la excelencia.'
+  });
+
   const values = [
     {
       icon: Target,

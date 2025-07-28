@@ -2,8 +2,14 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
+import { useSEO } from '@/hooks/useSEO';
 import heroOffice from '@/assets/hero-office.jpg';
 const Home = () => {
+  useSEO({
+    title: 'Cytek | Soluciones TI Profesionales y Servicios Gestionados',
+    description: 'Cytek ofrece soluciones TI modernas, incluyendo ciberseguridad y servicios cloud para pymes. Contacta para un presupuesto gratuito.'
+  });
+
   const mainServices = [{
     icon: Settings,
     title: 'Servicios TI Gestionados',
