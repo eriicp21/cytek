@@ -38,9 +38,7 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden" style={{
-        backgroundColor: '#0A192F'
-      }}>
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-cytek-blue to-cytek-blue-dark">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
