@@ -12,7 +12,7 @@ const maskStyle = {
   WebkitMaskRepeat: 'no-repeat',
   maskImage: `url('${LOGO_BASE64}')`,
   maskSize: '22vw',
-  maskPosition: 'top',
+  maskPosition: 'center',
   maskRepeat: 'no-repeat',
 } as const;
 
