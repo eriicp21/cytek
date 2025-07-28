@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import cytekLogo from '@/assets/cytek-logo.png';
 
 const Footer = () => {
   return (
@@ -9,16 +10,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="text-2xl font-bold text-primary mb-4">
-              Cytek
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={cytekLogo} 
+                alt="Cytek" 
+                className="h-8 w-auto"
+              />
+              <div className="text-2xl font-bold text-primary">
+                Cytek
+              </div>
             </div>
             <p className="text-muted-foreground mb-4">
               Soluciones TI profesionales para pequeñas y medianas empresas. 
               Experiencia de confianza en consultoría tecnológica y soporte especializado.
             </p>
             <div className="flex space-x-4">
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
+              <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
             </div>
           </div>
 

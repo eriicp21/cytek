@@ -21,103 +21,103 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Excellence',
-      description: 'We strive for excellence in every project, delivering solutions that exceed expectations and drive business success.'
+      title: 'Excelencia',
+      description: 'Nos esforzamos por la excelencia en cada proyecto, entregando soluciones que superan expectativas e impulsan el éxito empresarial.'
     },
     {
       icon: Users,
-      title: 'Partnership',
-      description: 'We build long-term partnerships with our clients, understanding their unique needs and growing together.'
+      title: 'Colaboración',
+      description: 'Construimos alianzas a largo plazo con nuestros clientes, entendiendo sus necesidades únicas y creciendo juntos.'
     },
     {
       icon: Award,
-      title: 'Innovation',
-      description: 'We stay ahead of technology trends to provide cutting-edge solutions that keep our clients competitive.'
+      title: 'Innovación',
+      description: 'Nos mantenemos a la vanguardia de las tendencias tecnológicas para proporcionar soluciones de vanguardia que mantienen competitivos a nuestros clientes.'
     },
     {
       icon: Clock,
-      title: 'Reliability',
-      description: 'Our clients depend on us for critical IT services, and we deliver with unwavering reliability and uptime.'
+      title: 'Fiabilidad',
+      description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
     }
   ];
 
   const team = [
     {
-      name: 'Michael Chen',
-      role: 'CEO & Founder',
-      description: 'Over 20 years of experience in enterprise IT solutions and business strategy.',
-      image: '👨‍💼'
+      name: 'Carlos Mendoza',
+      role: 'CEO y Fundador',
+      description: 'Más de 20 años de experiencia en soluciones TI empresariales y estrategia de negocio.',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
     },
     {
-      name: 'Sarah Johnson',
-      role: 'CTO',
-      description: 'Expert in cloud architecture and cybersecurity with 15+ years in the field.',
-      image: '👩‍💻'
+      name: 'Ana Rodríguez',
+      role: 'Directora Técnica',
+      description: 'Experta en arquitectura cloud y ciberseguridad con más de 15 años en el sector.',
+      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b618?w=400&h=400&fit=crop&auto=format'
     },
     {
-      name: 'David Rodriguez',
-      role: 'VP of Operations',
-      description: 'Specializes in IT infrastructure and project management for SMB clients.',
-      image: '👨‍🔧'
+      name: 'Miguel Santos',
+      role: 'VP de Operaciones',
+      description: 'Especialista en infraestructura TI y gestión de proyectos para clientes pyme.',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format'
     },
     {
-      name: 'Emily Watson',
-      role: 'Head of Client Success',
-      description: 'Dedicated to ensuring our clients achieve maximum value from their IT investments.',
-      image: '👩‍💼'
+      name: 'Laura Fernández',
+      role: 'Directora de Éxito del Cliente',
+      description: 'Dedicada a asegurar que nuestros clientes obtengan el máximo valor de sus inversiones TI.',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
     }
   ];
 
   const milestones = [
-    { year: '2008', event: 'Founded Cytek with a vision to democratize enterprise IT for SMBs' },
-    { year: '2012', event: 'Expanded to cloud services, helping 100+ businesses migrate to the cloud' },
-    { year: '2016', event: 'Launched 24/7 support center with industry-leading response times' },
-    { year: '2020', event: 'Achieved 99.9% uptime guarantee and grew to serve 500+ clients' },
-    { year: '2024', event: 'Recognized as a top IT service provider with advanced cybersecurity offerings' }
+    { year: '2008', event: 'Fundamos Cytek con la visión de democratizar la TI empresarial para pymes' },
+    { year: '2012', event: 'Expandimos a servicios cloud, ayudando a más de 100 empresas a migrar a la nube' },
+    { year: '2016', event: 'Lanzamos centro de soporte 24/7 con tiempos de respuesta líderes en la industria' },
+    { year: '2020', event: 'Alcanzamos garantía de disponibilidad del 99,9% y crecimos a servir más de 500 clientes' },
+    { year: '2024', event: 'Reconocidos como proveedor líder de servicios TI con ofertas avanzadas de ciberseguridad' }
   ];
 
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            About Cytek
+            Sobre Cytek
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Since 2008, we've been empowering small and medium-sized businesses with 
-            enterprise-grade IT solutions. Our mission is simple: make advanced technology 
-            accessible, affordable, and effective for growing companies.
+            Desde 2008, hemos estado empoderando a pequeñas y medianas empresas con 
+            soluciones TI de nivel empresarial. Nuestra misión es simple: hacer que la tecnología 
+            avanzada sea accesible, asequible y efectiva para empresas en crecimiento.
           </p>
         </div>
 
         {/* Mission & Vision */}
         <section className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-lg hover-scale">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Our Mission</CardTitle>
+                <CardTitle className="text-2xl text-primary">Nuestra Misión</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To bridge the technology gap for small and medium-sized businesses by providing 
-                  enterprise-level IT solutions that are accessible, reliable, and cost-effective. 
-                  We believe every business deserves world-class technology support to compete and thrive 
-                  in today's digital economy.
+                  Cerrar la brecha tecnológica para pequeñas y medianas empresas proporcionando 
+                  soluciones TI de nivel empresarial que sean accesibles, fiables y rentables. 
+                  Creemos que cada empresa merece soporte tecnológico de clase mundial para competir y prosperar 
+                  en la economía digital actual.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-lg hover-scale">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Our Vision</CardTitle>
+                <CardTitle className="text-2xl text-primary">Nuestra Visión</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the most trusted IT partner for growing businesses, known for our expertise, 
-                  reliability, and commitment to client success. We envision a future where technology 
-                  barriers no longer limit business potential, and every company can leverage cutting-edge 
-                  solutions to achieve their goals.
+                  Ser el socio TI más confiable para empresas en crecimiento, conocidos por nuestra experiencia, 
+                  fiabilidad y compromiso con el éxito del cliente. Visionamos un futuro donde las barreras tecnológicas 
+                  ya no limiten el potencial empresarial, y cada empresa pueda aprovechar soluciones de vanguardia 
+                  para alcanzar sus objetivos.
                 </p>
               </CardContent>
             </Card>
@@ -127,9 +127,9 @@ const About = () => {
         {/* Values */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Core Values</h2>
+            <h2 className="text-3xl font-bold mb-4">Nuestros Valores Fundamentales</h2>
             <p className="text-muted-foreground">
-              The principles that guide everything we do
+              Los principios que guían todo lo que hacemos
             </p>
           </div>
           
@@ -155,17 +155,23 @@ const About = () => {
         {/* Team */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Meet Our Leadership Team</h2>
+            <h2 className="text-3xl font-bold mb-4">Conoce a Nuestro Equipo Directivo</h2>
             <p className="text-muted-foreground">
-              Experienced professionals dedicated to your success
+              Profesionales experimentados dedicados a tu éxito
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300">
+              <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
                 <CardHeader>
-                  <div className="text-6xl mb-4">{member.image}</div>
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
                   <CardDescription className="text-primary font-semibold">
                     {member.role}
@@ -185,16 +191,16 @@ const About = () => {
         {/* Timeline */}
         <section className="mb-20 bg-secondary rounded-2xl p-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Journey</h2>
+            <h2 className="text-3xl font-bold mb-4">Nuestro Recorrido</h2>
             <p className="text-muted-foreground">
-              Key milestones in our growth and evolution
+              Hitos clave en nuestro crecimiento y evolución
             </p>
           </div>
           
           <div className="space-y-8">
             {milestones.map((milestone, index) => (
-              <div key={index} className="flex items-start space-x-6">
-                <div className="flex-shrink-0 w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center font-bold">
+              <div key={index} className="flex items-start space-x-6 animate-fade-in">
+                <div className="flex-shrink-0 w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center font-bold hover-scale">
                   {milestone.year}
                 </div>
                 <div className="pt-4">
@@ -212,18 +218,18 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Why Businesses Choose Cytek
+                Por Qué las Empresas Eligen Cytek
               </h2>
               <div className="space-y-4">
                 {[
-                  'Proven track record with 500+ satisfied clients',
-                  '99.9% uptime guarantee backed by SLA',
-                  '24/7 expert support with rapid response times',
-                  'Tailored solutions for your specific industry',
-                  'Transparent pricing with no hidden costs',
-                  'Proactive monitoring and maintenance'
+                  'Historial probado con más de 500 clientes satisfechos',
+                  'Garantía de disponibilidad del 99,9% respaldada por SLA',
+                  'Soporte experto 24/7 con tiempos de respuesta rápidos',
+                  'Soluciones adaptadas a tu sector específico',
+                  'Precios transparentes sin costos ocultos',
+                  'Monitoreo y mantenimiento proactivo'
                 ].map((reason, index) => (
-                  <div key={index} className="flex items-center space-x-3">
+                  <div key={index} className="flex items-center space-x-3 animate-fade-in">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                     <span className="text-muted-foreground">{reason}</span>
                   </div>
@@ -231,20 +237,20 @@ const About = () => {
               </div>
             </div>
             
-            <Card className="border-0 shadow-lg p-8">
+            <Card className="border-0 shadow-lg p-8 hover-scale">
               <div className="text-center">
-                <h3 className="text-2xl font-bold mb-4">Ready to Partner with Us?</h3>
+                <h3 className="text-2xl font-bold mb-4">¿Listo para Asociarte con Nosotros?</h3>
                 <p className="text-muted-foreground mb-6">
-                  Join hundreds of businesses that trust Cytek for their IT needs. 
-                  Let's discuss how we can help your business grow.
+                  Únete a cientos de empresas que confían en Cytek para sus necesidades TI. 
+                  Hablemos sobre cómo podemos ayudar a que tu negocio crezca.
                 </p>
                 <div className="space-y-4">
-                  <Button className="w-full" size="lg">
-                    Schedule a Consultation
+                  <Button className="w-full hover-scale" size="lg">
+                    Programar una Consulta
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                  <Button variant="outline" className="w-full" size="lg">
-                    Download Company Profile
+                  <Button variant="outline" className="w-full hover-scale" size="lg">
+                    Descargar Perfil de Empresa
                   </Button>
                 </div>
               </div>

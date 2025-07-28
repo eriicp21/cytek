@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import cytekLogo from '@/assets/cytek-logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src={cytekLogo} 
+              alt="Cytek" 
+              className="h-8 w-auto"
+            />
+            <div className="text-2xl font-bold text-primary hidden sm:block">
               Cytek
             </div>
           </Link>
