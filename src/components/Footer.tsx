@@ -16,8 +16,9 @@ const Footer = () => {
               Experiencia de confianza en consultoría tecnológica y soporte especializado.
             </p>
             <div className="flex space-x-4">
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
-              
+              <a href="https://www.linkedin.com/company/cytek-it" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors hover-scale" />
+              </a>
             </div>
           </div>
 
