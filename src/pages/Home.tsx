@@ -47,7 +47,7 @@ const Home = () => {
           <div className="text-center max-w-4xl mx-auto animate-fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Soluciones TI Modernas para el 
-              <span className="block text-cytek-blue-light text-[#bfdfff]">Crecimiento de tu Negocio</span>
+              <span className="block text-cytek-blue-light text-[#c5e5ff]">Crecimiento de tu Negocio</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed">
               Servicios tecnológicos fiables, seguros y escalables adaptados a tus necesidades
