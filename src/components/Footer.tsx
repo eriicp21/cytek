@@ -83,10 +83,10 @@ const Footer = () => {
               © {new Date().getFullYear()} Cytek. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6">
-              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link to="/politica-de-privacidad" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Política de Privacidad
               </Link>
-              <Link to="/legal" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link to="/aviso-legal" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 Aviso Legal
               </Link>
             </div>
