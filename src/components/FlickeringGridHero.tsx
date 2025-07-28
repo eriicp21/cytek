@@ -30,7 +30,7 @@ const GRID_CONFIG = {
     maxOpacity: 0.65,
     flickerChance: 0.18,
     squareSize: 3,
-    gridGap: 6,
+    gridGap: 5,
   },
 } as const;
 
