@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
-import cytekLogo from '@/assets/cytek-logo.png';
+const cytekLogo = '/lovable-uploads/611f1b34-9e50-4f15-ad8a-ee15814d7b95.png';
 const Footer = () => {
   return <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
