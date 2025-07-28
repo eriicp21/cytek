@@ -2,20 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
 import cytekLogo from '@/assets/cytek-logo.png';
-
 const Footer = () => {
-  return (
-    <footer className="bg-muted border-t border-border">
+  return <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img 
-                src={cytekLogo} 
-                alt="Cytek" 
-                className="h-12 w-auto"
-              />
+              <img src={cytekLogo} alt="Cytek" className="h-12 w-auto" />
             </div>
             <p className="text-muted-foreground mb-4">
               Soluciones TI profesionales para pequeñas y medianas empresas. 
@@ -78,14 +72,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-primary" />
                 <span className="text-muted-foreground">info@cytek.es</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground">
-                  Calle Tecnología, 123<br />
-                  28001 Madrid<br />
-                  España
-                </span>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -106,8 +93,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
