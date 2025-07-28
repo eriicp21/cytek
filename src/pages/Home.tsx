@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
+import { Button } from '@/components/ui/button';
 import heroOffice from '@/assets/hero-office.jpg';
 const Home = () => {
   useSEO({
@@ -53,9 +54,11 @@ const Home = () => {
               Servicios tecnológicos fiables, seguros y escalables adaptados a tus necesidades
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-                Solicitar Presupuesto
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
+                <Link to="/contact">
+                  Solicitar Presupuesto
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -162,9 +165,11 @@ const Home = () => {
             Solicita tu consulta gratuita hoy mismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-              Solicitar Presupuesto
-              <ArrowRight className="ml-2 h-6 w-6" />
+            <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
+              <Link to="/contact">
+                Solicitar Presupuesto
+                <ArrowRight className="ml-2 h-6 w-6" />
+              </Link>
             </Button>
             
           </div>

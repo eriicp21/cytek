@@ -12,7 +12,6 @@ const Navigation = () => {
     { name: 'Inicio', path: '/' },
     { name: 'Servicios', path: '/services' },
     { name: 'Nosotros', path: '/about' },
-    { name: 'Contacto', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,8 +44,8 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4">
-              Solicitar Presupuesto
+            <Button asChild className="ml-4">
+              <Link to="/contact">Solicitar Presupuesto</Link>
             </Button>
           </div>
 
@@ -83,8 +82,8 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="mx-3 mt-4">
-                Solicitar Presupuesto
+              <Button asChild className="mx-3 mt-4">
+                <Link to="/contact">Solicitar Presupuesto</Link>
               </Button>
             </div>
           </div>
