@@ -25,7 +25,7 @@ const Navigation = () => {
             <img 
               src={cytekLogo} 
               alt="Cytek" 
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
