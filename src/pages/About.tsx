@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Award, Users, Target, Clock, CheckCircle, ArrowRight, Linkedin, Settings, Shield } from 'lucide-react';
+import { Award, Users, Target, MapPin, CheckCircle, ArrowRight, Linkedin, Settings, Shield } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import React from 'react';
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
     title: 'Innovación',
     description: 'Nos mantenemos a la vanguardia de las tendencias tecnológicas para proporcionar soluciones de vanguardia que mantienen competitivos a nuestros clientes.'
   }, {
-    icon: Clock,
+    icon: MapPin,
     title: 'Cercanía',
     description: 'Construimos relaciones cercanas con nuestros clientes, siendo accesibles y comprometidos para brindar atención personalizada en cada interacción.'
   }];
