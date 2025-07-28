@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Award, Users, Target, Clock, CheckCircle, ArrowRight, Linkedin } from 'lucide-react';
+import { Award, Users, Target, Clock, CheckCircle, ArrowRight, Linkedin, Settings, Shield } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import React from 'react';
 const About = () => {
@@ -47,21 +47,22 @@ const About = () => {
     description: 'Dedicada a asegurar que nuestros clientes obtengan el máximo valor de sus inversiones TI.',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
   }];
-  const milestones = [{
-    year: '2024',
-    event: 'Fundamos Cytek con la visión de democratizar la TI empresarial para pymes'
+  const commitments = [{
+    title: 'Tecnología de Vanguardia',
+    description: 'Implementamos las últimas tecnologías y mejores prácticas del sector para garantizar soluciones modernas y eficientes que impulsen tu negocio hacia el futuro.',
+    icon: Settings
   }, {
-    year: '2024',
-    event: 'Lanzamos nuestros servicios principales: TI gestionada, ciberseguridad y cloud'
+    title: 'Atención Personalizada',
+    description: 'Cada cliente es único, por eso adaptamos nuestras soluciones a las necesidades específicas de tu empresa, asegurando un servicio personalizado y resultados óptimos.',
+    icon: Users
   }, {
-    year: '2024',
-    event: 'Establecimos alianzas estratégicas con proveedores tecnológicos líderes'
+    title: 'Soporte Confiable',
+    description: 'Nuestro compromiso va más allá de la implementación. Proporcionamos soporte continuo y proactivo para asegurar que tu infraestructura TI funcione sin interrupciones.',
+    icon: Shield
   }, {
-    year: '2024',
-    event: 'Iniciamos operaciones con un enfoque innovador en soporte proactivo'
-  }, {
-    year: '2025',
-    event: 'Expandimos nuestro portafolio con servicios de diseño y desarrollo web'
+    title: 'Crecimiento Conjunto',
+    description: 'Creemos en construir relaciones a largo plazo. Tu éxito es nuestro éxito, y trabajamos como socios para hacer crecer tu negocio con soluciones escalables.',
+    icon: Target
   }];
   return <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,53 +136,60 @@ const About = () => {
         {/* Team */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Conoce a Nuestro Equipo Directivo</h2>
+            <h2 className="text-3xl font-bold mb-4">Conoce a Nuestro Fundador</h2>
             <p className="text-muted-foreground">
-              Profesionales experimentados dedicados a tu éxito
+              El visionario detrás de Cytek y su compromiso con la excelencia tecnológica
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => <Card key={index} className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
+          <div className="flex justify-center">
+            <div className="max-w-sm">
+              <Card className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
                 <CardHeader>
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img src={team[0].image} alt={team[0].name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <CardTitle className="text-xl">{member.name}</CardTitle>
+                  <CardTitle className="text-xl">{team[0].name}</CardTitle>
                   <CardDescription className="text-primary font-semibold">
-                    {member.role}
+                    {team[0].role}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    {member.description}
+                    {team[0].description}
                   </p>
                   <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer mx-auto transition-colors" />
                 </CardContent>
-              </Card>)}
+              </Card>
+            </div>
           </div>
         </section>
 
-        {/* Timeline */}
+        {/* Our Commitment */}
         <section className="mb-20 bg-secondary rounded-2xl p-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nuestro Recorrido</h2>
+            <h2 className="text-3xl font-bold mb-4">Nuestro Compromiso</h2>
             <p className="text-muted-foreground">
-              Hitos clave en nuestro crecimiento y evolución
+              Los pilares fundamentales que guían nuestra forma de trabajar contigo
             </p>
           </div>
           
-          <div className="space-y-8">
-            {milestones.map((milestone, index) => <div key={index} className="flex items-start space-x-6 animate-fade-in">
-                <div className="flex-shrink-0 w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center font-bold hover-scale">
-                  {milestone.year}
-                </div>
-                <div className="pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {commitments.map((commitment, index) => <Card key={index} className="border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
+                <CardHeader>
+                  <div className="flex items-center mb-4">
+                    <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
+                      <commitment.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl">{commitment.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
                   <p className="text-muted-foreground leading-relaxed">
-                    {milestone.event}
+                    {commitment.description}
                   </p>
-                </div>
-              </div>)}
+                </CardContent>
+              </Card>)}
           </div>
         </section>
 
