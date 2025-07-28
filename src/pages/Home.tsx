@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import { Button } from '@/components/ui/button';
-import GeometricWireframe from '@/components/GeometricWireframe';
+import { FlickeringGridHero } from '@/components/FlickeringGridHero';
 const Home = () => {
   useSEO({
     title: 'Cytek | Soluciones TI Profesionales y Servicios Gestionados',
@@ -75,9 +75,9 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Geometric Wireframe */}
+            {/* Right Column - Flickering Grid Animation */}
             <div className="animate-stagger-fade-in-4">
-              <GeometricWireframe />
+              <FlickeringGridHero />
             </div>
           </div>
         </div>
