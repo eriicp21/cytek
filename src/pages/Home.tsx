@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import { Button } from '@/components/ui/button';
-import { AnimatedHeroGraphic } from '@/components/AnimatedHeroGraphic';
+import heroDataViz from '@/assets/hero-data-visualization.jpg';
 const Home = () => {
   useSEO({
     title: 'Cytek | Soluciones TI Profesionales y Servicios Gestionados',
@@ -60,10 +60,15 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Animated Tech Graphic */}
+            {/* Right Column - Abstract Data Visualization */}
             <div className="animate-stagger-fade-in-4">
               <div className="relative">
-                <AnimatedHeroGraphic />
+                <img 
+                  src={heroDataViz} 
+                  alt="Data Visualization" 
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/20 to-transparent rounded-lg"></div>
               </div>
             </div>
           </div>
