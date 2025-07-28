@@ -27,9 +27,9 @@ const About = () => {
     description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
   }];
   const team = [{
-    name: 'Carlos Mendoza',
+    name: 'Pol García',
     role: 'CEO y Fundador',
-    description: 'Visionario con experiencia en soluciones TI empresariales y estrategia de negocio.',
+    description: 'Apasionado por democratizar la tecnología empresarial y crear soluciones que realmente impulsen el crecimiento de las pymes.',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format'
   }, {
     name: 'Ana Rodríguez',
