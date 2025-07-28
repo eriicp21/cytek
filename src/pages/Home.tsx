@@ -145,8 +145,8 @@ const Home = () => {
                   "Cytek transformó completamente nuestra infraestructura TI. Su equipo no solo resolvió nuestros problemas técnicos, sino que también nos ayudó a crecer de manera más eficiente. El soporte 24/7 nos da la tranquilidad que necesitamos para concentrarnos en nuestro negocio."
                 </blockquote>
                 <div className="border-t border-border pt-6">
-                  <div className="font-semibold text-lg text-foreground">María García</div>
-                  <div className="text-muted-foreground">Directora General, Innovación Digital S.L.</div>
+                  <div className="font-semibold text-lg text-foreground">Ana López</div>
+                  <div className="text-muted-foreground">Directora General, Empresa de Servicios</div>
                 </div>
               </CardContent>
             </Card>
