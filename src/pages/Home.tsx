@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import { Button } from '@/components/ui/button';
-import heroOffice from '@/assets/hero-office.jpg';
+import heroDataViz from '@/assets/hero-data-visualization.jpg';
 const Home = () => {
   useSEO({
     title: 'Cytek | Soluciones TI Profesionales y Servicios Gestionados',
@@ -38,28 +38,40 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-cytek-blue-dark text-white py-20 lg:py-32 overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.85)), url(${heroOffice})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}>
-        
+      <section className="relative py-20 lg:py-32 overflow-hidden" style={{
+        backgroundColor: '#0A192F'
+      }}>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Soluciones TI Modernas para el 
-              <span className="block text-blue-200">Crecimiento de tu Negocio</span>
-            </h1>
-            <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed">
-              Servicios tecnológicos fiables, seguros y escalables adaptados a tus necesidades
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-                <Link to="/contact">
-                  Solicitar Presupuesto
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <div className="text-white space-y-8">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
+                Soluciones TI Modernas para el 
+                <span className="block text-white">Crecimiento de tu Negocio</span>
+              </h1>
+              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed animate-stagger-fade-in-2">
+                Servicios tecnológicos fiables, seguros y escalables adaptados a tus necesidades
+              </p>
+              <div className="animate-stagger-fade-in-3">
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+                  <Link to="/contact">
+                    Solicitar Presupuesto
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right Column - Abstract Data Visualization */}
+            <div className="animate-stagger-fade-in-4">
+              <div className="relative">
+                <img 
+                  src={heroDataViz} 
+                  alt="Data Visualization" 
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/20 to-transparent rounded-lg"></div>
+              </div>
             </div>
           </div>
         </div>
