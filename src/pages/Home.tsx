@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Shield, Cloud, Settings, CheckCircle, ArrowRight, Users, DollarSign, Quote } from 'lucide-react';
 import { useSEO } from '@/hooks/useSEO';
 import { Button } from '@/components/ui/button';
-import heroDataViz from '@/assets/hero-data-visualization.jpg';
+import GeometricWireframe from '@/components/GeometricWireframe';
 const Home = () => {
   useSEO({
     title: 'Cytek | Soluciones TI Profesionales y Servicios Gestionados',
@@ -38,38 +38,50 @@ const Home = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-cytek-blue to-cytek-blue-dark">
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-teal))] to-[hsl(var(--cytek-teal-dark))]">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
-                Soluciones TI Modernas para el 
-                <span className="block text-white">Crecimiento de tu Negocio</span>
+                Soluciones TI 
+                <span className="block text-teal-200">más poderosas</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed animate-stagger-fade-in-2">
-                Servicios tecnológicos fiables, seguros y escalables adaptados a tus necesidades
+              <p className="text-lg lg:text-xl text-gray-200 leading-relaxed animate-stagger-fade-in-2">
+                Impulsados por soluciones de primera línea, creamos experiencias tecnológicas personalizadas en todos los canales con nuestra plataforma de servicios TI potenciada por IA.
               </p>
-              <div className="animate-stagger-fade-in-3">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+              <div className="flex flex-col sm:flex-row gap-4 animate-stagger-fade-in-3">
+                <Button asChild size="lg" className="bg-teal-200 hover:bg-teal-100 text-[hsl(var(--cytek-teal))] font-semibold transition-all duration-300 hover:scale-105">
                   <Link to="/contact">
-                    Solicitar Presupuesto
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Empezar
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 transition-all duration-300">
+                  <Link to="/contact">
+                    Solicitar Demo
                   </Link>
                 </Button>
               </div>
+              
+              <div className="flex flex-col sm:flex-row gap-6 text-sm text-teal-100 animate-stagger-fade-in-4">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-teal-200" />
+                  <span>Prueba gratuita de 14 días</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-teal-200" />
+                  <span>Sin tarjeta de crédito requerida</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-teal-200" />
+                  <span>Cancelar en cualquier momento</span>
+                </div>
+              </div>
             </div>
 
-            {/* Right Column - Abstract Data Visualization */}
+            {/* Right Column - Geometric Wireframe */}
             <div className="animate-stagger-fade-in-4">
-              <div className="relative">
-                <img 
-                  src={heroDataViz} 
-                  alt="Data Visualization" 
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/20 to-transparent rounded-lg"></div>
-              </div>
+              <GeometricWireframe />
             </div>
           </div>
         </div>

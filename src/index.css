@@ -48,6 +48,11 @@ All colors MUST be HSL.
     --cytek-grey-light: 210 17% 98%;
     --cytek-grey: 215.4 16.3% 46.9%;
     
+    /* Teal/Turquoise colors for hero section */
+    --cytek-teal: 180 25% 25%;
+    --cytek-teal-dark: 180 25% 20%;
+    --cytek-teal-light: 180 25% 30%;
+    
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--cytek-blue)), hsl(var(--cytek-blue-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--cytek-blue)) 0%, hsl(var(--cytek-blue-dark)) 100%);
