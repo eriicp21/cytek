@@ -24,7 +24,7 @@ const About = () => {
   }, {
     icon: Clock,
     title: 'Cercanía',
-    description: 'Nuestros clientes dependen de nosotros para servicios TI críticos, y entregamos con fiabilidad inquebrantable y máximo tiempo de actividad.'
+    description: 'Construimos relaciones cercanas con nuestros clientes, siendo accesibles y comprometidos para brindar atención personalizada en cada interacción.'
   }];
   const team = [{
     name: 'Pol García',
