@@ -158,7 +158,7 @@ const Home = () => {
             ¿Listo para modernizar tu TI?
           </h2>
           <p className="text-xl lg:text-2xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Únete a más de 500 empresas que confían en Cytek para impulsar su crecimiento tecnológico. 
+            Descubre cómo podemos transformar la tecnología de tu empresa y acelerar tu crecimiento. 
             Solicita tu consulta gratuita hoy mismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
