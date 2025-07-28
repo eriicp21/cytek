@@ -16,11 +16,9 @@ const LegalNotice = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Datos de la Empresa</h2>
               <div className="bg-muted/50 p-6 rounded-lg space-y-2">
-                <p><span className="font-medium text-foreground">Razón Social:</span> Cytek Consultoría Tecnológica S.L.</p>
-                <p><span className="font-medium text-foreground">CIF:</span> B-12345678</p>
-                <p><span className="font-medium text-foreground">Domicilio:</span> Calle Tecnología, 123, 28001 Madrid, España</p>
-                <p><span className="font-medium text-foreground">Email:</span> info@cytek.es</p>
-                <p><span className="font-medium text-foreground">Teléfono:</span> +34 912 345 678</p>
+                <p><span className="font-medium text-foreground">Razón Social:</span> Cytek</p>
+                <p><span className="font-medium text-foreground">Email:</span> contacto@cytek.es</p>
+                <p><span className="font-medium text-foreground">Teléfono:</span> +34 633 145 270</p>
               </div>
             </section>
 
@@ -114,8 +112,8 @@ const LegalNotice = () => {
                 Para cualquier consulta relacionada con este aviso legal, puede contactar con nosotros:
               </p>
               <div className="bg-muted/50 p-4 rounded-lg">
-                <p className="font-medium">Email: info@cytek.es</p>
-                <p className="font-medium">Teléfono: +34 912 345 678</p>
+                <p className="font-medium">Email: contacto@cytek.es</p>
+                <p className="font-medium">Teléfono: +34 633 145 270</p>
               </div>
               <p className="text-sm text-muted-foreground mt-4">
                 Última actualización: {new Date().toLocaleDateString('es-ES')}
