@@ -18,20 +18,18 @@ export const FlickeringGridHero = () => {
         className="absolute inset-0 z-0"
         style={{
           maskImage: `
-            radial-gradient(circle at center, transparent 60px, white 70px, white 90px, transparent 100px),
-            radial-gradient(circle at center, transparent 100px, white 110px, white 130px, transparent 140px),
-            radial-gradient(circle at center, transparent 140px, white 150px, white 170px, transparent 180px),
-            radial-gradient(circle at center, transparent 180px, white 190px, white 210px, transparent 220px)
+            radial-gradient(circle at center, transparent 40px, white 50px, white 80px, transparent 90px),
+            radial-gradient(circle at center, transparent 90px, white 100px, white 130px, transparent 140px),
+            radial-gradient(circle at center, transparent 140px, white 150px, white 180px, transparent 190px)
           `,
-          maskComposite: 'intersect',
+          maskComposite: 'add',
           WebkitMaskImage: `
-            radial-gradient(circle at center, transparent 60px, white 70px, white 90px, transparent 100px),
-            radial-gradient(circle at center, transparent 100px, white 110px, white 130px, transparent 140px),
-            radial-gradient(circle at center, transparent 140px, white 150px, white 170px, transparent 180px),
-            radial-gradient(circle at center, transparent 180px, white 190px, white 210px, transparent 220px)
+            radial-gradient(circle at center, transparent 40px, white 50px, white 80px, transparent 90px),
+            radial-gradient(circle at center, transparent 90px, white 100px, white 130px, transparent 140px),
+            radial-gradient(circle at center, transparent 140px, white 150px, white 180px, transparent 190px)
           `,
-          WebkitMaskComposite: 'intersect',
-          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 85%, 85% 85%, 85% 15%, 50% 15%)'
+          WebkitMaskComposite: 'add',
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 80%, 80% 80%, 80% 20%, 50% 20%)'
         }}
         {...GRID_CONFIG}
       />
