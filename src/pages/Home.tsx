@@ -39,10 +39,17 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-blue-dark))] to-[hsl(var(--cytek-blue-purple))]">
+        {/* Background FlickeringGrid for tablets and larger screens */}
+        <div className="hidden md:block absolute inset-0 opacity-30">
+          <div className="absolute right-0 top-0 w-1/2 h-full">
+            <FlickeringGridHero />
+          </div>
+        </div>
+        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
-            <div className="text-white space-y-8">
+            <div className="text-white space-y-8 relative z-10">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
                 Soluciones TI Modernas para el 
                 <span className="block text-blue-200">Crecimiento de tu Negocio</span>
@@ -75,8 +82,8 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Flickering Grid Animation */}
-            <div className="animate-stagger-fade-in-4">
+            {/* Right Column - Flickering Grid Animation (mobile only) */}
+            <div className="md:hidden animate-stagger-fade-in-4">
               <FlickeringGridHero />
             </div>
           </div>
