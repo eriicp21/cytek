@@ -39,16 +39,15 @@ const Home = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-blue-dark))] to-[hsl(var(--cytek-blue-purple))]">
+        {/* Background FlickeringGrid for tablets and larger screens */}
+        <div className="hidden md:block lg:right-16 absolute top-1/2 -translate-y-1/2 -right-8 w-1/2 h-3/4 opacity-80">
+          <FlickeringGridHero />
+        </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8 relative z-10 max-w-[97%] lg:max-w-[95%]">
-              {/* Background FlickeringGrid positioned relative to text */}
-              <div className="hidden lg:block absolute -right-20 top-1/2 -translate-y-1/2 w-80 h-80 opacity-80 pointer-events-none">
-                <FlickeringGridHero />
-              </div>
-              
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
                 Soluciones TI Modernas para el 
                 <span className="block text-blue-200">Crecimiento de tu Negocio</span>
