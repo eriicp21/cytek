@@ -47,7 +47,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
-            <div className="text-white space-y-8 relative z-10 max-w-[80%] lg:max-w-[100%]">
+            <div className="text-white space-y-8 relative z-10 max-w-[95%] lg:max-w-[100%]">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-stagger-fade-in-1">
                 Soluciones TI Modernas para el 
                 <span className="block text-blue-200">Crecimiento de tu Negocio</span>
