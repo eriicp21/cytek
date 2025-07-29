@@ -40,7 +40,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-[hsl(var(--cytek-blue-dark))] to-[hsl(var(--cytek-blue-purple))]">
         {/* Background FlickeringGrid for tablets and larger screens */}
-        <div className="hidden md:block lg:-right-25 absolute top-1/2 -translate-y-1/2 -right-8 w-1/2 h-3/4 opacity-60">
+        <div className="hidden md:block lg:-right-35 absolute top-1/2 -translate-y-1/2 -right-8 w-1/2 h-3/4 opacity-60">
           <FlickeringGridHero />
         </div>
         
