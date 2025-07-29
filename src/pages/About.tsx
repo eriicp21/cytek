@@ -31,21 +31,6 @@ const About = () => {
     role: 'CEO y Fundador',
     description: 'Fundé Cytek con la convicción de que cada empresa merece acceso a tecnología de calidad. Me motiva ayudar a los empresarios a transformar sus desafíos tecnológicos en oportunidades de crecimiento.',
     image: '/lovable-uploads/b1836e60-4273-4011-a3b3-b9e25f8d0b22.png'
-  }, {
-    name: 'Ana Rodríguez',
-    role: 'Directora Técnica',
-    description: 'Experta en arquitectura cloud y ciberseguridad con sólida formación técnica.',
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b618?w=400&h=400&fit=crop&auto=format'
-  }, {
-    name: 'Miguel Santos',
-    role: 'VP de Operaciones',
-    description: 'Especialista en infraestructura TI y gestión de proyectos para clientes pyme.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format'
-  }, {
-    name: 'Laura Fernández',
-    role: 'Directora de Éxito del Cliente',
-    description: 'Dedicada a asegurar que nuestros clientes obtengan el máximo valor de sus inversiones TI.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format'
   }];
   const commitments = [{
     title: 'Tecnología de Vanguardia',
