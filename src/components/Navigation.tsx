@@ -10,8 +10,8 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Inicio', path: '/' },
-    { name: 'Servicios', path: '/services' },
-    { name: 'Nosotros', path: '/about' },
+    { name: 'Servicios', path: '/servicios' },
+    { name: 'Nosotros', path: '/nosotros' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -48,7 +48,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button asChild className="ml-4">
-              <Link to="/contact">Solicitar Presupuesto</Link>
+              <Link to="/contacto">Solicitar Presupuesto</Link>
             </Button>
           </div>
 
@@ -86,7 +86,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <Button asChild className="mx-3 mt-4">
-                <Link to="/contact">Solicitar Presupuesto</Link>
+                <Link to="/contacto">Solicitar Presupuesto</Link>
               </Button>
             </div>
           </div>

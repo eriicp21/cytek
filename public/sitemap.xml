@@ -7,19 +7,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cytek.es/services</loc>
+    <loc>https://cytek.es/servicios</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cytek.es/about</loc>
+    <loc>https://cytek.es/nosotros</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cytek.es/contact</loc>
+    <loc>https://cytek.es/contacto</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

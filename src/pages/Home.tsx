@@ -57,7 +57,7 @@ const Home = () => {
               </p>
               <div className="animate-stagger-fade-in-3">
                 <Button asChild size="lg" className="bg-white hover:bg-blue-50 text-[hsl(var(--cytek-blue))] font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
-                  <Link to="/contact">
+                  <Link to="/contacto">
                     Solicitar Presupuesto
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -189,7 +189,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-              <Link to="/contact">
+              <Link to="/contacto">
                 Solicitar Presupuesto
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Link>

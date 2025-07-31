@@ -208,7 +208,7 @@ const About = () => {
                 </p>
                 <div className="space-y-4">
                   <Button asChild className="w-full hover-scale" size="lg">
-                    <Link to="/contact">
+                    <Link to="/contacto">
                       Programar una Consulta
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>

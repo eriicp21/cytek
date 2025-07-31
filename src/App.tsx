@@ -27,9 +27,9 @@ const App = () => (
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/servicios" element={<Services />} />
+            <Route path="/nosotros" element={<About />} />
+            <Route path="/contacto" element={<Contact />} />
             <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />
             <Route path="/aviso-legal" element={<LegalNotice />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

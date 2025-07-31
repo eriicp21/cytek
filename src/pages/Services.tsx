@@ -100,7 +100,7 @@ const Services = () => {
                   </div>
 
                   <Button asChild className="hover-scale">
-                    <Link to="/contact">
+                    <Link to="/contacto">
                       Más Información
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
@@ -204,7 +204,7 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="text-primary font-semibold hover-scale">
-                <Link to="/contact">
+                <Link to="/contacto">
                   Consulta Gratuita
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
