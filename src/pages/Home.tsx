@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-cytek-blue-dark text-white">
+      <section className="py-20 bg-gradient-to-r from-primary to-[hsl(var(--cytek-blue-dark))] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
             ¿Listo para modernizar tu TI?

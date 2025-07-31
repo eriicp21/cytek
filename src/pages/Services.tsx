@@ -185,7 +185,7 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center animate-fade-in">
-          <div className="bg-gradient-to-r from-primary to-cytek-blue-dark text-white rounded-2xl p-12">
+          <div className="bg-gradient-to-r from-primary to-[hsl(var(--cytek-blue-dark))] text-white rounded-2xl p-12">
             <h2 className="text-3xl font-bold mb-4">
               ¿Listo para transformar tu infraestructura TI?
             </h2>
