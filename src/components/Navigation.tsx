@@ -24,8 +24,11 @@ const Navigation = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={cytekLogo} 
-              alt="Cytek" 
+              alt="Cytek - Soluciones TI Profesionales" 
               className="h-14 w-auto"
+              width="140"
+              height="56"
+              loading="eager"
             />
           </Link>
 

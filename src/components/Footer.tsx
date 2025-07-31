@@ -9,7 +9,14 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img src={cytekLogo} alt="Cytek" className="h-12 w-auto" />
+              <img 
+                src={cytekLogo} 
+                alt="Cytek - Soluciones TI Profesionales" 
+                className="h-12 w-auto"
+                width="120"
+                height="48"
+                loading="lazy"
+              />
             </div>
             <p className="text-muted-foreground mb-4">
               Soluciones TI profesionales para pequeñas y medianas empresas. 

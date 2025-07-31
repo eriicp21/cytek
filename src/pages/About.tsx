@@ -132,7 +132,14 @@ const About = () => {
               <Card className="text-center border-0 shadow-lg group hover:shadow-xl transition-all duration-300 hover-scale">
                 <CardHeader>
                   <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                    <img src={team[0].image} alt={team[0].name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                    <img 
+                      src={team[0].image} 
+                      alt="Pol García, CEO y Fundador de Cytek, profesional en soluciones TI para empresas" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      loading="lazy"
+                      width="128"
+                      height="128"
+                    />
                   </div>
                   <CardTitle className="text-xl">{team[0].name}</CardTitle>
                   <CardDescription className="text-primary font-semibold">

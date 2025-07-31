@@ -109,7 +109,16 @@ const Services = () => {
 
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="relative group">
-                    <img src={`https://images.unsplash.com/${service.image}?w=600&h=400&fit=crop&auto=format`} alt={service.title} className="rounded-xl shadow-lg w-full h-80 object-cover hover-scale" />
+                    <img 
+                      src={`https://images.unsplash.com/${service.image}?w=600&h=400&fit=crop&auto=format&q=85`} 
+                      alt={`${service.id === 'managed-it' ? 'Técnico gestionando infraestructura TI con múltiples monitores mostrando estadísticas del sistema' : 
+                            service.id === 'cybersecurity' ? 'Sistema de ciberseguridad con pantallas mostrando análisis de amenazas y protocolos de seguridad' : 
+                            'Infraestructura cloud con servidores y conexiones de red en un moderno centro de datos'}`}
+                      className="rounded-xl shadow-lg w-full h-80 object-cover hover-scale" 
+                      loading="lazy"
+                      width="600"
+                      height="400"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
