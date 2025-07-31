@@ -13,4 +13,3 @@ Allow: /politica-de-privacidad
 Allow: /aviso-legal
 
 # Crawl delay to be respectful to search engines
-Crawl-delay: 1
