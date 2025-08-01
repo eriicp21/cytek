@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-const cytekLogo = '/lovable-uploads/611f1b34-9e50-4f15-ad8a-ee15814d7b95.png';
+const cytekLogo = '/lovable-uploads/bf9e9e76-c3dc-4594-a048-0355affa8dfb.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
